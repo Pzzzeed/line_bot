@@ -1,0 +1,8 @@
+version: '3'
+services:
+  line-bot:
+    build: .
+    ports:
+      - '4000:4000'
+    env_file:
+      - .env # Reference your .env file
